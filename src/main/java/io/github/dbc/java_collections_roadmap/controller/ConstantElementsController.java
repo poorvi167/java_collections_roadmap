@@ -10,10 +10,12 @@ public class ConstantElementsController {
     @FXML
     public Button constantsNoButton;
 
+    @FXML
     private void onConstantsYesButtonClicked() {
         // open the next scene
     }
 
+    @FXML
     private void onConstantsNoButtonClicked() {
         // declare the result
         // close the current scene
