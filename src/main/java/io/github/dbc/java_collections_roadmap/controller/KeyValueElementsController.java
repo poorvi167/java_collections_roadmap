@@ -11,4 +11,13 @@ public class KeyValueElementsController {
     @FXML
     public Button keyValueNoButton;
 
+    @FXML
+    public void onKeyValueYesButtonClicked() {
+
+    }
+
+    @FXML
+    public void onKeyValueNoButtonClicked() {
+
+    }
 }
