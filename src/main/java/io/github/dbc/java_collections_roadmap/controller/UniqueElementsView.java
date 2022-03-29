@@ -4,7 +4,6 @@ import io.github.dbc.java_collections_roadmap.HelloApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -20,14 +19,19 @@ public class UniqueElementsView {
     public Button uniqueNoButton;
 
     @FXML
-    public void onUniqueYesButtonClicked() {
-        // ask the user to user java.util.Set
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Unique Elements");
-        alert.setHeaderText("Use java.util.Set!");
-        alert.setContentText("Since you want to store a unique elements only, you should use java.util.Set.");
-        alert.setResizable(false);
-        alert.showAndWait();
+    public void onUniqueYesButtonClicked() throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sort-elements-view.fxml"));
+        Scene scene = new Scene(
+                fxmlLoader.load(),
+                Screen.getPrimary().getBounds().getMinX(),
+                Screen.getPrimary().getBounds().getMinY()
+        );
+        stage.setTitle("Unique Elements in java.util.Set");
+        stage.setScene(scene);
+        stage.show();
+        // close the current stage
+        closeCurrentStage();
     }
 
     private void closeCurrentStage() {
