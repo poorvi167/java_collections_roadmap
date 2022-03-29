@@ -14,6 +14,6 @@ public class MainController {
 
     @FXML
     protected void onMainButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        // open the next stage here!
     }
 }
