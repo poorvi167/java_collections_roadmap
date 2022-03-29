@@ -21,7 +21,7 @@ public class HelloApplication extends Application {
                 Screen.getPrimary().getBounds().getMinX(),
                 Screen.getPrimary().getBounds().getMinY()
         );
-        stage.setTitle("Hello!");
+        stage.setTitle("Java Collections Roadmap");
         stage.setScene(scene);
         stage.show();
     }
