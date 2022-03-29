@@ -6,4 +6,6 @@ module io.github.dbc.java_collections_roadmap {
 
     opens io.github.dbc.java_collections_roadmap to javafx.fxml;
     exports io.github.dbc.java_collections_roadmap;
+    exports io.github.dbc.java_collections_roadmap.controller;
+    opens io.github.dbc.java_collections_roadmap.controller to javafx.fxml;
 }
