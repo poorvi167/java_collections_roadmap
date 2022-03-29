@@ -24,7 +24,7 @@ public class ConstantElementsController {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Constant Elements");
         alert.setHeaderText("Use Array!");
-        alert.setContentText("Since you want to store a constant number of elements, you should use Arrays");
+        alert.setContentText("Since you want to store a constant number of elements, you should use an array in Java.");
         alert.setResizable(false);
         alert.showAndWait();
         // close the current scene
