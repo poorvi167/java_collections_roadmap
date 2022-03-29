@@ -9,4 +9,15 @@ public class SortElementsController {
 
     @FXML
     public Button setSortingNoButton;
+
+
+    @FXML
+    public void sortingYesButtonPressed() {
+
+    }
+
+    @FXML
+    public void sortingNoButtonPressed() {
+
+    }
 }
