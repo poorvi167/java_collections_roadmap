@@ -32,5 +32,11 @@ public class MainController {
         stage.setTitle("Number of Elements");
         stage.setScene(scene);
         stage.show();
+        closeCurrentStage();
+    }
+
+    private void closeCurrentStage() {
+        Stage stage = (Stage) mainButton.getScene().getWindow();
+        stage.close();
     }
 }
