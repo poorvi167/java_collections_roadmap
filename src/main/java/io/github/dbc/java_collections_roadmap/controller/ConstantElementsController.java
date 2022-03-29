@@ -40,7 +40,7 @@ public class ConstantElementsController {
                 Screen.getPrimary().getBounds().getMinX(),
                 Screen.getPrimary().getBounds().getMinY()
         );
-        stage.setTitle("Number of Elements");
+        stage.setTitle("Unique Elements");
         stage.setScene(scene);
         stage.show();
         // close the current stage
