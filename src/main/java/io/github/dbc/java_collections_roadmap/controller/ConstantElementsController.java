@@ -3,6 +3,9 @@ package io.github.dbc.java_collections_roadmap.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ConstantElementsController {
     @FXML
@@ -24,7 +27,9 @@ public class ConstantElementsController {
     }
 
     @FXML
-    private void onConstantsNoButtonClicked() {
+    private void onConstantsNoButtonClicked() throws IOException {
         // open the next stage
+        Stage stage = new Stage();
+        // close the current stage
     }
 }
