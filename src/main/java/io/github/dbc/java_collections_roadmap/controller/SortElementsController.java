@@ -23,6 +23,10 @@ public class SortElementsController {
 
     @FXML
     public void sortingNoButtonPressed() {
-
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("java.util.HashSet<E> ");
+        alert.setHeaderText("Use java.util.HashSet<E>");
+        alert.setContentText("if you don't want to sorted elements, you can use java.util.HashSet<E>");
+        alert.showAndWait();
     }
 }
